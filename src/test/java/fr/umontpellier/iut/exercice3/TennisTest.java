@@ -64,7 +64,6 @@ class TennisTest {
         assertEquals("Nadal gagne", score);
     }
 
-    @Disabled
     @Test
     public void test_joueurs_a_egalite() {
         jeu = new Tennis(j1, j2);
@@ -74,7 +73,6 @@ class TennisTest {
         assertEquals("Égalité", score);
     }
 
-    @Disabled
     @Test
     public void test_joueurs_a_egalite2() {
         marquerPoints(4, 4);
