@@ -5,22 +5,13 @@ import java.util.ArrayList;
 public class PrimeFactors {
     public ArrayList<Integer> computeFactors(int number) {
         ArrayList<Integer> facteurs = new ArrayList<>();
+        int diviseur = 2;
         while (number > 1) {
-            if(number % 2 == 0) {
-                facteurs.add(2);
-                number /= 2;
-            } else if(number % 3 == 0) {
-                facteurs.add(3);
-                number /= 3;
-            } else if(number % 5 == 0) {
-                facteurs.add(5);
-                number /= 5;
-            } else if(number % 7 == 0) {
-                facteurs.add(7);
-                number /= 7;
+            if(number % diviseur == 0) {
+                facteurs.add(diviseur);
+                number /= diviseur;
             } else {
-                facteurs.add(number);
-                number = 1;
+                diviseur++;
             }
         }
         return facteurs;
