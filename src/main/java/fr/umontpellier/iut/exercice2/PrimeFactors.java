@@ -12,6 +12,9 @@ public class PrimeFactors {
             } else if(number % 3 == 0) {
                 facteurs.add(3);
                 number /= 3;
+            } else if(number % 7 == 0) {
+                facteurs.add(7);
+                number /= 7;
             } else {
                 facteurs.add(number);
                 number = 1;
