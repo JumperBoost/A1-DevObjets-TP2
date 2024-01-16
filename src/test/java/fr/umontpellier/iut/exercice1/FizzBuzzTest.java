@@ -51,7 +51,6 @@ public class FizzBuzzTest {
         assertEquals("FizzBuzz", result);
     }
 
-    @Disabled
     @Test
     public void test_getList_Should_Return_a_sequence_of_5_FizzBuzz_elements_when_5() {
         String[] result = fizzBuzz.computeList(5);

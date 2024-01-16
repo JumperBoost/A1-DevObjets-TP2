@@ -14,6 +14,10 @@ public class FizzBuzz {
     }
 
     public String[] computeList(int i) {
-        throw new RuntimeException("La fonction n'est pas encore implémentée !");
+        String[] liste = new String[i];
+        for(int j = 0; j < i; j++) {
+            liste[j] = getValue(j+1);
+        }
+        return liste;
     }
 }
