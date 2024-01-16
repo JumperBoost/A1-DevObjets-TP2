@@ -2,12 +2,11 @@ package fr.umontpellier.iut.exercice1;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 
 public class FizzBuzzTest {
-    private FizzBuzz fizzBuzz = new FizzBuzz();
+    private final FizzBuzz fizzBuzz = new FizzBuzz();
 
     @Test
     public void test_one_should_print_one() {
