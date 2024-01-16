@@ -11,7 +11,6 @@ class TennisTest {
     Tennis jeu = new Tennis(j1, j2);
 
 
-    @Disabled
     @Test
     public void test_nouveau_jeu_doit_retourner_zero_partout() {
         jeu = new Tennis(j1, j2);
