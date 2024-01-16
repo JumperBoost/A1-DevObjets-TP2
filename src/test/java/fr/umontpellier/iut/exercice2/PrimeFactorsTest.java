@@ -37,34 +37,29 @@ class PrimeFactorsTest {
     }
 
 
-    @Disabled
     @Test
     public void four_should_give_2_and_2() {
         assertEquals(list(2, 2), primeFactors.computeFactors(4));
     }
 
 
-    @Disabled
     @Test
     public void five_should_give_5() {
         assertEquals(list(5), primeFactors.computeFactors(5));
     }
 
 
-    @Disabled
     @Test
     public void six_should_give_2_and_3() {
         assertEquals(list(2, 3), primeFactors.computeFactors(6));
     }
 
-    @Disabled
     @Test
     public void seven_should_give_7() {
         assertEquals(list(7), primeFactors.computeFactors(7));
     }
 
 
-    @Disabled
     @Test
     public void eight_should_give_2() {
         assertEquals(list(2, 2, 2), primeFactors.computeFactors(8));
