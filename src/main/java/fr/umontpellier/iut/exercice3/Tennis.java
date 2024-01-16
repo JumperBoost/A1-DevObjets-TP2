@@ -15,7 +15,9 @@ public class Tennis {
 
     // incrémente les points du joueur correspondant
     public void gagnerPoint(String joueur) {
-        throw new RuntimeException("La fonction n'est pas encore implémentée !");
+        if(joueur == this.j1)
+            this.nbPointsJ1 += 15;
+        else this.nbPointsJ2 += 15;
     }
 
     // Retourne le score courant de la partie sous forme de chaîne de caractères

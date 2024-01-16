@@ -19,7 +19,6 @@ class TennisTest {
         assertEquals("0 : 0", score);
     }
 
-    @Disabled
     @Test
     public void test_premier_joueur_remporte_le_premier_point() {
         jeu = new Tennis(j1, j2);
@@ -29,7 +28,6 @@ class TennisTest {
         assertEquals("15 : 0", score);
     }
 
-    @Disabled
     @Test
     public void test_15_partout() {
         jeu = new Tennis(j1, j2);
