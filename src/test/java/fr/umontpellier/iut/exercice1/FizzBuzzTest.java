@@ -27,21 +27,18 @@ public class FizzBuzzTest {
         assertEquals("Fizz", result);
     }
 
-    @Disabled
     @Test
     public void test_five_should_print_buzz() {
         String result = fizzBuzz.getValue(5);
         assertEquals("Buzz", result);
     }
 
-    @Disabled
     @Test
     public void test_six_should_print_fizz() {
         String result = fizzBuzz.getValue(6);
         assertEquals("Fizz", result);
     }
 
-    @Disabled
     @Test
     public void test_ten_should_print_buzz() {
         String result = fizzBuzz.getValue(10);
