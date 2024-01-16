@@ -77,6 +77,21 @@ class PrimeFactorsTest {
     }
 
     @Test
+    public void eleven_should_give_11() {
+        assertEquals(list(11), primeFactors.computeFactors(11));
+    }
+
+    @Test
+    public void seven_hundred_sixty_five_should_give_765() {
+        assertEquals(list(3, 3, 5, 17), primeFactors.computeFactors(765));
+    }
+
+    @Test
+    public void seven_thousand_four_hundred_sixty_four_should_give_7464() {
+        assertEquals(list(2, 2, 2, 3, 311), primeFactors.computeFactors(7464));
+    }
+
+    @Test
     public void four_thousand_one_hundred_fifty_eight_should_give_2_3_3_3_7_11() {
         assertEquals(list(2, 3, 3, 3, 7, 11), primeFactors.computeFactors(4158));
     }
