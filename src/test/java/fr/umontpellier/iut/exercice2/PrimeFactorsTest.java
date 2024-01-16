@@ -19,21 +19,18 @@ class PrimeFactorsTest {
     }
 
 
-    @Disabled
     @Test
     public void one_should_give_empty() {
         assertEquals(list(), primeFactors.computeFactors(1));
     }
 
 
-    @Disabled
     @Test
     public void two_should_give_2() {
         assertEquals(list(2), primeFactors.computeFactors(2));
     }
 
 
-    @Disabled
     @Test
     public void three_should_give_3() {
         assertEquals(list(3), primeFactors.computeFactors(3));
