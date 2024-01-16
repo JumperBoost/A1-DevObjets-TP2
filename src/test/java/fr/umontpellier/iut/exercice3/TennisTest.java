@@ -38,7 +38,6 @@ class TennisTest {
         assertEquals("15 : 15", score);
     }
 
-    @Disabled
     @Test
     public void test_deuxieme_joueur_gagne_trois_points_daffilee() {
         jeu = new Tennis(j1, j2);

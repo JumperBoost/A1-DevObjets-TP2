@@ -15,9 +15,15 @@ public class Tennis {
 
     // incrémente les points du joueur correspondant
     public void gagnerPoint(String joueur) {
+        int points = joueur == this.j1 ? this.nbPointsJ1 : this.nbPointsJ2;
+        if(points < 15)
+            points = 15;
+        else if(points < 30)
+            points = 30;
+        else points = 40;
         if(joueur == this.j1)
-            this.nbPointsJ1 += 15;
-        else this.nbPointsJ2 += 15;
+            this.nbPointsJ1 = points;
+        else this.nbPointsJ2 = points;
     }
 
     // Retourne le score courant de la partie sous forme de chaîne de caractères
