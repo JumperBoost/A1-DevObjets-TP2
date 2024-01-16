@@ -9,6 +9,9 @@ public class PrimeFactors {
             if(number % 2 == 0) {
                 facteurs.add(2);
                 number /= 2;
+            } else if(number % 3 == 0) {
+                facteurs.add(3);
+                number /= 3;
             } else {
                 facteurs.add(number);
                 number = 1;

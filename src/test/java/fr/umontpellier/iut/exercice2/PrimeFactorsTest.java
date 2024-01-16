@@ -66,13 +66,11 @@ class PrimeFactorsTest {
     }
 
 
-    @Disabled
     @Test
     public void nine_should_give_3() {
         assertEquals(list(3, 3), primeFactors.computeFactors(9));
     }
 
-    @Disabled
     @Test
     public void ten_should_give_10() {
         assertEquals(list(2, 5), primeFactors.computeFactors(10));
