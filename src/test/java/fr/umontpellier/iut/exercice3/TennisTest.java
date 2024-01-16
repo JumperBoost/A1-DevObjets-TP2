@@ -81,7 +81,6 @@ class TennisTest {
         assertEquals("Égalité", score);
     }
 
-    @Disabled
     @Test
     public void test_avantage_joueur_1() {
         marquerPoints(4, 3);
@@ -90,7 +89,6 @@ class TennisTest {
         assertEquals("Avantage Federer", score);
     }
 
-    @Disabled
     @Test
     public void test_avantage_joueur_2() {
         marquerPoints(3, 4);

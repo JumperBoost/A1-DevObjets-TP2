@@ -33,6 +33,10 @@ public class Tennis {
     public String getScore() {
         if(this.nbPointsJ1 >= 40 && this.nbPointsJ1 == this.nbPointsJ2)
             return "Égalité";
+        else if(this.nbPointsJ1 >= 50 && this.nbPointsJ2 >= 40 && this.nbPointsJ2 < 50)
+            return "Avantage " + this.j1;
+        else if(this.nbPointsJ2 >= 50 && this.nbPointsJ1 >= 40)
+            return "Avantage " + this.j2;
         else if(this.nbPointsJ1 == 50)
             return this.j1 + " gagne";
         else if(this.nbPointsJ2 == 50)
