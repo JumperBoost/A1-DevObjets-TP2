@@ -1,6 +1,5 @@
 package fr.umontpellier.iut.exercice3;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -97,7 +96,6 @@ class TennisTest {
         assertEquals("Avantage Nadal", score);
     }
 
-    @Disabled
     @Test
     public void test_joueur_1_gagne_apres_avantage() {
         marquerPoints(5, 3);
@@ -106,7 +104,6 @@ class TennisTest {
         assertEquals("Federer gagne", score);
     }
 
-    @Disabled
     @Test
     public void test_joueur_2_gagne_apres_avantage() {
         marquerPoints(4, 6);

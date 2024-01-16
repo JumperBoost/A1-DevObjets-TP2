@@ -22,7 +22,9 @@ public class Tennis {
             points = 30;
         else if(points < 40)
             points = 40;
-        else points = 50;
+        else if(points < 50)
+            points = 50;
+        else points = 60;
         if(joueur == this.j1)
             this.nbPointsJ1 = points;
         else this.nbPointsJ2 = points;
@@ -31,16 +33,16 @@ public class Tennis {
     // Retourne le score courant de la partie sous forme de chaîne de caractères
     // Cette fonction interprète le score actuel sous forme d'un texte respectant la nomenclature d'un jeu de tennis
     public String getScore() {
-        if(this.nbPointsJ1 >= 40 && this.nbPointsJ1 == this.nbPointsJ2)
-            return "Égalité";
-        else if(this.nbPointsJ1 >= 50 && this.nbPointsJ2 >= 40 && this.nbPointsJ2 < 50)
-            return "Avantage " + this.j1;
-        else if(this.nbPointsJ2 >= 50 && this.nbPointsJ1 >= 40)
-            return "Avantage " + this.j2;
-        else if(this.nbPointsJ1 == 50)
+        if(this.nbPointsJ1 >= 50 && this.nbPointsJ2 < 40 || this.nbPointsJ1 == 60)
             return this.j1 + " gagne";
-        else if(this.nbPointsJ2 == 50)
+        else if(this.nbPointsJ2 >= 50 && this.nbPointsJ1 < 40 || this.nbPointsJ2 == 60)
             return this.j2 + " gagne";
+        else if(this.nbPointsJ1 >= 40 && this.nbPointsJ1 == this.nbPointsJ2)
+            return "Égalité";
+        else if(this.nbPointsJ1 >= 50)
+            return "Avantage " + this.j1;
+        else if(this.nbPointsJ2 >= 50)
+            return "Avantage " + this.j2;
         return this.nbPointsJ1 + " : " + this.nbPointsJ2;
     }
 
