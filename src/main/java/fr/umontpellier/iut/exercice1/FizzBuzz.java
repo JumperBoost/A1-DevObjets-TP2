@@ -3,14 +3,13 @@ package fr.umontpellier.iut.exercice1;
 public class FizzBuzz {
 
     public String getValue(int i) {
-        String res = "";
+        if(i % 15 == 0)
+            return "FizzBuzz";
         if(i % 3 == 0)
-            res += "Fizz";
+            return "Fizz";
         if(i % 5 == 0)
-            res += "Buzz";
-        if(res.isEmpty())
-            res += i;
-        return res;
+            return "Buzz";
+        return String.valueOf(i);
     }
 
     public String[] computeList(int i) {
