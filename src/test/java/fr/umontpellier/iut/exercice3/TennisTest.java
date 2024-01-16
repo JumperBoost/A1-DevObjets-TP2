@@ -47,7 +47,6 @@ class TennisTest {
         assertEquals("0 : 40", score);
     }
 
-    @Disabled
     @Test
     public void test_premier_joueur_gagne() {
         jeu = new Tennis(j1, j2);
@@ -57,7 +56,6 @@ class TennisTest {
         assertEquals("Federer gagne", score);
     }
 
-    @Disabled
     @Test
     public void test_deuxieme_joueur_gagne() {
         marquerPoints(1, 4);
