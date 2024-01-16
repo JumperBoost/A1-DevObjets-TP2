@@ -45,7 +45,6 @@ public class FizzBuzzTest {
         assertEquals("Buzz", result);
     }
 
-    @Disabled
     @Test
     public void test_fifteen_should_print_fizzbuzz() {
         String result = fizzBuzz.getValue(15);
